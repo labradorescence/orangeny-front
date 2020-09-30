@@ -11,7 +11,7 @@ function App() {
 
 <html lang="en">
 <head>
-  <title>Global</title>
+  <title>Orange NY </title>
   <meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
@@ -38,7 +38,7 @@ function App() {
         <header className="header">
           <a className="header--logo" href="#0">
             <img src={require("./img/logo.png")} alt="Global"></img>
-            <p>Global</p>
+            <p>Orange NY </p>
           </a>
           <button className="header--cta cta">Hire Us</button>
           <div className="header--nav-toggle">
@@ -58,7 +58,7 @@ function App() {
           <li className="l-section section section--is-active">
             <div className="intro">
               <div className="intro--banner">
-                <h1>Your next<br></br>interactive<br></br>experience</h1>
+                <h1>Hello<br></br>World<br></br></h1>
                 <button className="cta">Hire Us
 
                   <svg version="1.1" id="Layer_1" 
