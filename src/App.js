@@ -25,7 +25,7 @@ function App() {
 {/* <!-- notification for small viewports and landscape oriented smartphones --> */}
 <div className="device-notification">
   <a className="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global"></img>
+    <img src={require("./img/logo.png")} alt="Global"></img>
     <p>Global</p>
   </a>
   <p className="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
@@ -37,7 +37,7 @@ function App() {
       <div className="l-wrapper">
         <header className="header">
           <a className="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global"></img>
+            <img src={require("./img/logo.png")} alt="Global"></img>
             <p>Global</p>
           </a>
           <button className="header--cta cta">Hire Us</button>
@@ -77,7 +77,7 @@ function App() {
                   </svg>
                   <span className="btn-background"></span>
                 </button>
-                <img src="assets/img/introduction-visual.png" alt="Welcome"></img>
+                <img src={require("./img/introduction-visual.png")} alt="Welcome"></img>
               </div>
               <div className="intro--options">
                 <a href="#0">
@@ -103,7 +103,7 @@ function App() {
                   <li className="slider--item slider--item-left">
                     <a href="#0">
                       <div className="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory"></img>
+                        <img src={require("./img/work-victory.jpg")} alt="Victory"></img>
                       </div>
                       <p className="slider--item-title">Victory</p>
                       <p className="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
@@ -112,7 +112,7 @@ function App() {
                   <li className="slider--item slider--item-center">
                     <a href="#0">
                       <div className="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith"></img>
+                        <img src={require("./img/work-metiew-smith.jpg")} alt="Metiew and Smith"></img>
                       </div>
                       <p className="slider--item-title">Metiew &amp; Smith</p>
                       <p className="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
@@ -121,7 +121,7 @@ function App() {
                   <li className="slider--item slider--item-right">
                     <a href="#0">
                       <div className="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak"></img>
+                        <img src={require("./img/work-alex-nowak.jpg")} alt="Alex Nowak"></img>
                       </div>
                       <p className="slider--item-title">Alex Nowak</p>
                       <p className="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
@@ -134,7 +134,7 @@ function App() {
                   xmlnsXlink="http://www.w3.org/1999/xlink" 
                   x="0px" y="0px"
                   viewBox="0 0 150 118" 
-                  styles={{enableBackground:'new 0 0 150 118'}}
+                  style={{enableBackground:'new 0 0 150 118'}}
                   xmlXspace="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                     <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
@@ -148,7 +148,7 @@ function App() {
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
                   xmlnsXlink="http://www.w3.org/1999/xlink" 
                   x="0px" y="0px" viewBox="0 0 150 118" 
-                  styles="enable-background:new 0 0 150 118;" 
+                  style={{enableBackground:'new 0 0 150 118'}}
                   xmlXspace="preserve">
 
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -165,14 +165,15 @@ function App() {
                 <h2>We<br></br>believe in<br></br>passionate<br></br>people</h2>
                 <a href="#0">Career
                   <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" styles="enable-background:new 0 0 150 118;" xmlXspace="preserve">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style={{enableBackground:'new 0 0 150 118'}}
+                    xmlXspace="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                       <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
                     </g>
                     </svg>
                   </span>
                 </a>
-                <img src="assets/img/about-visual.png" alt="About Us"></img>
+                <img src={require("./img/about-visual.png")} alt="About Us"></img>
               </div>
               <div className="about--options">
                 <a href="#0">
@@ -215,7 +216,8 @@ function App() {
                     <input id="opt-1" type="checkbox" value="app design"></input>
                     <label for="opt-1">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" styles="enable-background:new 0 0 150 111;" xmlXspace="preserve">
+                      viewBox="0 0 150 111" 
+                      style={{enableBackground:'new 0 0 150 111'}} xmlXspace="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                         <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                       </g>
@@ -225,7 +227,9 @@ function App() {
                     <input id="opt-2" type="checkbox" value="graphic design"></input>
                     <label for="opt-2">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" styles="enable-background:new 0 0 150 111;" xmlXspace="preserve">
+                      viewBox="0 0 150 111" 
+                      style={{enableBackground:'new 0 0 150 111'}}
+                      xmlXspace="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                         <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                       </g>
@@ -235,7 +239,8 @@ function App() {
                     <input id="opt-3" type="checkbox" value="motion design"></input>
                     <label for="opt-3">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" styles="enable-background:new 0 0 150 111;" xmlXspace="preserve">
+                      viewBox="0 0 150 111" 
+                      style={{enableBackground:'new 0 0 150 111'}} xmlXspace="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                         <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                       </g>
@@ -247,7 +252,8 @@ function App() {
                     <input id="opt-4" type="checkbox" value="ux design"></input>
                     <label for="opt-4">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" styles="enable-background:new 0 0 150 111;" xmlXspace="preserve">
+                      viewBox="0 0 150 111" 
+                      style={{enableBackground:'new 0 0 150 111'}} xmlXspace="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                         <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                       </g>
@@ -257,7 +263,9 @@ function App() {
                     <input id="opt-5" type="checkbox" value="webdesign"></input>
                     <label for="opt-5">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" styles="enable-background:new 0 0 150 111;" xmlXspace="preserve">
+                      viewBox="0 0 150 111" 
+                      style={{enableBackground:'new 0 0 150 111'}}
+                      xmlXspace="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                         <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                       </g>
@@ -267,7 +275,8 @@ function App() {
                     <input id="opt-6" type="checkbox" value="marketing"></input>
                     <label for="opt-6">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" styles="enable-background:new 0 0 150 111;" xmlXspace="preserve">
+                      viewBox="0 0 150 111" 
+                      style={{enableBackground:'new 0 0 150 111'}} xmlXspace="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
                         <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                       </g>
